@@ -3,7 +3,7 @@ $(document).ready(function() {
 		if(event.keyCode == 13) {
 			var fizzBuzz = function(integer) {
 			var clear = $("#number_input").val(" ");		
-				for (i=1; i<=integer && i<=100 ; i++)	{
+				for (i=1; i<=integer && i<=100; i++)	{
 					if(i%3 == 0 && i%5 ==0) {
 						$("body").append("<p>" + "fizz buzz");
 					}
@@ -18,8 +18,8 @@ $(document).ready(function() {
 					}
 					$(clear).hide("#number_input");
 				}
-				if(isNaN(integer) || integer%1 !=0 || integer >= +"101") {
-					alert("Please enter a whole number from 1 - 100!");
+				if(isNaN(integer) || integer%1 !=0) {
+					alert("Please enter a whole number!");
 					$(clear);
 				}
 			}
